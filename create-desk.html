@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="../css/style.css">
+    <title>Main</title>
+</head>
+<body>
+    <header>
+        <div class="head">
+            <a href="../index.html"><img class="logo" src="../img/logo.png"></a>
+            <nav>
+                <ul>
+                    <li><a href="../project/project.html">ПРОЕКТЫ</a></li>
+                    <li><a href="../report/report.html">ОТЧЕТЫ</a></li>
+                    <li><a href="desk.html">ДОСКИ КАНБАН</a></li>
+                    <li><a href="../diagram/diagram.html">ДИАГРАММЫ ГАНТА</a></li>
+                </ul>
+                <input id="search-header" class="search-header" placeholder=" Поиск..." type="text">
+                <div class="header-icon">
+                    <i class='bx bx-bell' id="bell-icon"></i>
+                    <i class='bx bx-help-circle' ></i>
+                    <a href="../index.html"><i class='bx bx-home-alt-2' ></i></a>
+                </div> 
+            </nav>
+        </div>
+        
+    </header>
+    <main>
+        <article>   
+            <section class="event-section">
+                <h2>Создание доски канбан</h2>
+                    <form class="create-project" method="post">
+                        <input type="text" placeholder="Название доски">
+                        <label>Проект</label>
+                        <select>
+                            <option value="">--Выберите проект--</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                        </select>
+                        <label>Могут просматривать</label>
+                        <select>
+                            <option value="1">Все участники</option>
+                            <option value="2">Только я</option>
+                        </select>
+                        <label>Могут редактировать</label>
+                        <select>
+                            <option value="1">Все участники</option>
+                            <option value="2">Только я</option>
+                        </select>
+
+
+                    </form>
+                   
+                <div class="button-project">
+                    <button class="add-project"><i class='bx bx-rocket'></i>Создать</button>
+                    <button onclick="window.location.href='desk.html'" class="cansel-project"><i class='bx bx-exit'></i>Отмена</button>
+                </div>
+            </section>
+        </article>
+        <aside>
+            <div class="profile-user">
+                <div class="user">
+                    <img src="../img/user.png" alt="user">
+                    <div class="email">Youremail@mail.ru</div>
+                </div>
+                <div class="portfolio">
+                   <div class="portfolio-block">
+                        <i class='bx bxs-add-to-queue' ></i>
+                        <p>Проекты: <span>6</span></p>  
+                    </div>
+                    <div class="portfolio-block">
+                        <i class='bx bxs-receipt'></i>
+                        <p>Отчеты: <span>5</span></p>  
+                    </div>
+                    <div class="portfolio-block">
+                        <i class='bx bxs-book-content' ></i>
+                        <p>Доски Кабан: <span>3</span></p>  
+                    </div>
+                    <div class="portfolio-block">
+                        <i class='bx bxs-objects-vertical-bottom' ></i>
+                        <p>Диаграммы Ганта: <span>6</span></p>  
+                    </div>
+                </div>
+            </div>
+                <table id="calendar2">
+                  <thead>
+                    <tr><td>‹<td colspan="5"><td>›
+                    <tr><td>Пн<td>Вт<td>Ср<td>Чт<td>Пт<td>Сб<td>Вс
+                  <tbody>
+                </table>
+        </aside>
+    </main>
+<footer>
+<p>Designed by Kafian Aristagets | Tracker Board</p>
+<p>aristagets@yandex.ru</p>
+</footer>
+
+<script src="https://code.jquery.com/jquery-3.6.3.js" integrity="sha256-nQLuAZGRRcILA+6dMBOvcRh5Pe310sBpanc6+QBmyVM=" crossorigin="anonymous"> </script>
+<script src="../js/main.js"></script>
+<script src="../js/preview.js"></script>
+</body>
+</html>

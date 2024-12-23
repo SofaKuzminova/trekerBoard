@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="../css/style.css">
+    <title>Main</title>
+</head>
+<body>
+    <header>
+        <div class="head">
+            <a href="../index.html"><img class="logo" src="../img/logo.png"></a>
+            <nav>
+                <ul>
+                    <li><a href="../project/project.html">ПРОЕКТЫ</a></li>
+                    <li><a href="../report/report.html">ОТЧЕТЫ</a></li>
+                    <li><a href="../desk/desk.html">ДОСКИ КАНБАН</a></li>
+                    <li><a href="diagram.html">ДИАГРАММЫ ГАНТА</a></li>
+                </ul>
+                <input id="search-header" class="search-header" placeholder=" Поиск..." type="text">
+                <div class="header-icon">
+                    <i class='bx bx-bell' id="bell-icon"></i>
+                    <i class='bx bx-help-circle' ></i>
+                    <a href="../index.html"><i class='bx bx-home-alt-2' ></i></a>
+                </div> 
+            </nav>
+        </div>
+        
+    </header>
+    <main>
+        <article class="diagram-article">   
+            <section class="diagram-section">
+                <div class="diargam-main">
+                    <div class="diagram">
+                        <div class="title">Диаграмма 1</div>
+                        <div class="manage-diagram">
+                            <i class='bx bxs-edit'></i>
+                            <i class='bx bxs-trash'></i>
+                        </div>
+                        <div class="open-close-diagram">
+                            <i class='bx bx-chevron-up up' style="display:none;"></i>
+                            <i class='bx bx-chevron-down down'></i>
+                        </div>   
+                    </div>
+                    <!-- <div class="diagram">
+                        <div class="title">Диаграмма 2</div>
+                        <div class="manage-diagram">
+                            <i class='bx bxs-edit'></i>
+                            <i class='bx bxs-trash'></i>
+                        </div>
+                        <div class="open-close-diagram">
+                            <i class='bx bx-chevron-up up' style="display:none;"></i>
+                            <i class='bx bx-chevron-down down'></i>
+                        </div>   
+                    </div>
+                    <div class="diagram">
+                        <div class="title">Диаграмма 3</div>
+                        <div class="manage-diagram">
+                            <i class='bx bxs-edit'></i>
+                            <i class='bx bxs-trash'></i>
+                        </div>
+                        <div class="open-close-diagram">
+                            <i class='bx bx-chevron-up up' style="display:none;"></i>
+                            <i class='bx bx-chevron-down down'></i>
+                        </div>   
+                    </div> -->
+
+
+
+                    <div class="diagram-content">
+                        <div class="title">
+                            <p>Диаграмма 1</p>
+                            <div class="date">
+                                <p>Дата начала: <span>18 ноября 2024</span></p>
+                                <p>Дата окончания: <span>21 ноября 2024</span></p>
+                            </div>
+                            <div class="week-manage">
+                                <i class='bx bx-chevron-left'></i>
+                                <p>Неделя</p>
+                                <i class='bx bx-chevron-right'></i>
+                            </div>
+                        </div>
+                        <div class="date-distanse">
+                            <div class="day-to-week first">
+                                <p>18 ноября - 25 ноября</p>
+                            </div>
+                            <div class="day-to-week">
+                                <p>25 ноября - 1 декабря</p>
+                            </div>
+                        </div>
+                        <div class="diagram-table">
+                            <div class="info-column">
+                                <div class="title-info-column">
+                                    <ul>
+                                        <li class="ex">Задача</li>
+                                        <li class="days">Срок</li>
+                                        <li class="begin">Дата начала</li>
+                                    </ul>
+                                </div>
+                                <div class="content-info-column">
+                                    <ul>
+                                        <li class="ex">Задача 1</li>
+                                        <li class="days">3</li>
+                                        <li class="begin">18.11.2024</li>
+
+                                        <div class="distanse-draw">Задача 1</div>
+                                    </ul>
+                                    
+                                </div>
+                            </div>
+                            <div class="days-columns">
+                                <div class="days-columns-title">
+                                    <div class="week">
+                                        <ul>
+                                            <li>ПН</li><li>ВТ</li><li>СР</li>
+                                            <li>ЧТ</li><li>ПТ</li><li>СБ</li><li>ВС</li>
+                                        </ul>
+                                    </div>
+                                    <div class="week">
+                                        <ul>
+                                            <li>ПН</li><li>ВТ</li><li>СР</li>
+                                            <li>ЧТ</li><li>ПТ</li><li>СБ</li><li>ВС</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="content-week">
+                                    <ul>
+                                        <li></li><li></li><li></li><li></li><li></li>
+                                        <li></li><li></li><li></li><li></li><li></li>
+                                        <li></li><li></li><li></li><li></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>      
+                    
+
+                <div class="button-project">
+                    <button onclick="window.location.href='create-diagram.html';" class="add-project"><i class='bx bx-rocket'></i>Создать</button>
+                    <button class="import-project"><i class='bx bx-import' ></i>Импортировать</button>
+                </div>
+            </section>
+        </article>
+    </main>
+<footer>
+<p>Designed by Kafian Aristagets | Tracker Board</p>
+<p>aristagets@yandex.ru</p>
+</footer>
+<script src="https://code.jquery.com/jquery-3.6.3.js" integrity="sha256-nQLuAZGRRcILA+6dMBOvcRh5Pe310sBpanc6+QBmyVM=" crossorigin="anonymous"> </script>
+<script src="../js/open-desk.js"></script>
+<script src="../js/main.js"></script>
+</body>
+</html>

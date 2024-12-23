@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="../css/style.css">
+    <title>Main</title>
+</head>
+<body>
+    <header>
+        <div class="head">
+            <a href="../index.html"><img class="logo" src="../img/logo.png"></a>
+            <nav>
+                <ul>
+                    <li><a href="../project/project.html">ПРОЕКТЫ</a></li>
+                    <li><a href="../report/report.html">ОТЧЕТЫ</a></li>
+                    <li><a href="desk.html">ДОСКИ КАНБАН</a></li>
+                    <li><a href="../diagram/diagram.html">ДИАГРАММЫ ГАНТА</a></li>
+                </ul>
+                <input id="search-header" class="search-header" placeholder=" Поиск..." type="text">
+                <div class="header-icon">
+                    <i class='bx bx-bell' id="bell-icon"></i>
+                    <i class='bx bx-help-circle' ></i>
+                    <a href="../index.html"><i class='bx bx-home-alt-2' ></i></a>
+                </div> 
+            </nav>
+        </div>
+        
+    </header>
+    <main>
+        <article>   
+            <section class="event-section">
+                <h2>Мои доски канбан</h2>
+                <div class="my-desk">
+                    <div class="desk" id="desk_1" onclick="toggleDesk(event)">
+                        <div class="title">Доска 1</div>
+                        <div class="manage-desk">
+                            <i class='bx bxs-edit'></i>
+                            <i class='bx bxs-trash'></i>
+                        </div>
+                        <div class="open-close-desk">
+                            <i class='bx bx-chevron-up up' style="display:none;"></i>
+                            <i class='bx bx-chevron-down down'></i>
+                        </div>     
+                    </div>
+                    <div class="desk" id="desk_2" onclick="toggleDesk(event)">
+                        <div class="title">Доска 2</div>
+                        <div class="manage-desk">
+                            <i class='bx bxs-edit'></i>
+                            <i class='bx bxs-trash'></i>
+                        </div>
+                        <div class="open-close-desk">
+                            <i class='bx bx-chevron-up up' style="display:none;"></i>
+                            <i class='bx bx-chevron-down down'></i>
+                        </div>     
+                    </div>
+                
+                    <div class="content-desk" id="content-desk" style="display:none;">
+                        <div class="column">
+                            <div class="title">
+                                <h4>Столбец 1</h4>
+                                <div class="mange-column-desk">
+                                    <i class='bx bxs-edit'></i>
+                                    <i class='bx bxs-trash'></i>
+                                </div> 
+                            </div>
+                            <div class="task-list">
+                                <div class="task">Задача 1</div>
+                                <div class="task">Задача 2</div>
+                                <button><i class='bx bx-plus'></i>Добавить задачу</button>
+                            </div>
+                        </div>
+                
+                        <div class="column">
+                            <div class="title">
+                                <h4>Столбец 2</h4>
+                                <div class="mange-column-desk">
+                                    <i class='bx bxs-edit'></i>
+                                    <i class='bx bxs-trash'></i>
+                                </div> 
+                            </div>
+                            <div class="task-list">
+                                <div class="task">Задача 1</div>
+                                <div class="task">Задача 2</div>
+                                <div class="task">Задача 3</div>
+                                <button><i class='bx bx-plus'></i>Добавить задачу</button>
+                            </div>
+                        </div>
+                
+                        <div class="add-column">
+                            <i class='bx bxs-plus-square'></i>
+                        </div>
+                    </div>
+                </div>      
+                    
+
+                <div class="button-project">
+                    <button onclick="window.location.href='create-desk.html';" class="add-project"><i class='bx bx-rocket'></i>Создать</button>
+                    <button class="import-project"><i class='bx bx-import' ></i>Импортировать</button>
+                </div>
+            </section>
+        </article>
+        <aside>
+            <div class="profile-user">
+                <div class="user">
+                    <img src="../img/user.png" alt="user">
+                    <div class="email">Youremail@mail.ru</div>
+                </div>
+                <div class="portfolio">
+                   <div class="portfolio-block">
+                        <i class='bx bxs-add-to-queue' ></i>
+                        <p>Проекты: <span>6</span></p>  
+                    </div>
+                    <div class="portfolio-block">
+                        <i class='bx bxs-receipt'></i>
+                        <p>Отчеты: <span>5</span></p>  
+                    </div>
+                    <div class="portfolio-block">
+                        <i class='bx bxs-book-content' ></i>
+                        <p>Доски Кабан: <span>3</span></p>  
+                    </div>
+                    <div class="portfolio-block">
+                        <i class='bx bxs-objects-vertical-bottom' ></i>
+                        <p>Диаграммы Ганта: <span>6</span></p>  
+                    </div>
+                </div>
+            </div>
+                <table id="calendar2">
+                  <thead>
+                    <tr><td>‹<td colspan="5"><td>›
+                    <tr><td>Пн<td>Вт<td>Ср<td>Чт<td>Пт<td>Сб<td>Вс
+                  <tbody>
+                </table>
+        </aside>
+    </main>
+<footer>
+<p>Designed by Kafian Aristagets | Tracker Board</p>
+<p>aristagets@yandex.ru</p>
+</footer>
+<script src="https://code.jquery.com/jquery-3.6.3.js" integrity="sha256-nQLuAZGRRcILA+6dMBOvcRh5Pe310sBpanc6+QBmyVM=" crossorigin="anonymous"> </script>
+<script src="../js/open-desk.js"></script>
+<script src="../js/main.js"></script>
+</body>
+</html>
